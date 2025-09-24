@@ -1,0 +1,111 @@
+.banner-container {
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-start;
+  padding: 20px;
+  width: 90%;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.banner-container .banner-text-container {
+  justify-content: left;
+  align-items: center;
+  width: 25%;
+  display: inline;
+  margin: auto;
+}
+
+h1 {
+  font-size: 36px; 
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.gender-selection {
+  justify-content: left;
+}
+
+.gender-selection h3 {
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 24px; 
+  font-weight: normal;
+  
+}
+
+.gender-selection .selected {
+  color: red;
+  font-weight: bold;
+  border-bottom: 2px solid red;
+}
+
+.parag {
+  font-size: 16px; 
+  margin: 20px 0;
+  width: auto;
+}
+
+.banner-container .slider {
+  display: flex;
+  justify-content: right;
+  width: 60%;
+  background-color: #f8f4f4;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.slider img {
+  width: 110px;
+  height: auto;
+}
+
+.slider div {
+  text-align: center;
+  font-size: 14px; 
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px; 
+  }
+  .parag {
+    font-size: 14px; 
+  }
+  .banner-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-text-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .slider {
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .slider img {
+    width: 80px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner-container .slider {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .banner-container .slider {
+    width: 80%;
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .banner-container .slider {
+    width: 60%;
+    margin-right: 20px;
+  }
+}
