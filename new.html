@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial</title>
+</head>
+<body>
+    <script>
+        function factorial(n) {
+            if (n === 0 || n === 1) {
+                return 1;
+            } else {
+                return n * factorial(n - 1);
+            }
+        }
+
+        let number = parseInt(prompt("Enter a number to calculate its factorial:"));
+        if (number < 0) {
+            alert("Factorial is not defined for negative numbers.");
+        } else {
+            let result = factorial(number);
+            alert("The factorial of " + number + " is " + result + ".");
+        }
+    </script>
+    
+</body>
+</html>
